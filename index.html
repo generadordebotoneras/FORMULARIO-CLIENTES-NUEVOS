@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Botonera Digital - Mi Botonera</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="formulario-botonera">
+            <div class="form-header">
+                <h1>👩🏻‍💻 Trabajo Contacto</h1>
+                <div class="theme-toggle">
+                    <button type="button" id="themeToggle" class="btn-theme">
+                        🌙
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>📋 Información Básica</h2>
+                <div class="form-group">
+                    <label for="tipo_negocio">Tipo de Negocio:</label>
+                    <select id="tipo_negocio" name="tipo_negocio" required>
+                        <option value="">Seleccione el tipo de negocio</option>
+                        <option value="floristeria">Floristería</option>
+                        <option value="restaurante">Restaurante</option>
+                        <option value="tienda">Tienda</option>
+                        <option value="estetica">Estética</option>
+                        <option value="peluqueria">Peluquería</option>
+                        <option value="consultorio">Consultorio</option>
+                        <option value="gimnasio">Gimnasio</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="idioma">Idioma del Sitio:</label>
+                    <select id="idioma" name="idioma" required>
+                        <option value="es">Español</option>
+                        <option value="en">Inglés</option>
+                        <option value="bilingue">Bilingüe</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="logo">Logotipo o Imagen Destacada:</label>
+                    <div class="file-upload">
+                        <input type="file" id="logo" name="logo" accept="image/*">
+                        <div class="file-preview" id="logoPreview"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="imagenes">Imágenes Adicionales:</label>
+                    <div class="file-upload">
+                        <input type="file" id="imagenes" name="imagenes" accept="image/*" multiple>
+                        <div class="file-preview" id="imagenesPreview"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>📝 Instrucciones del Proyecto</h2>
+                <div class="form-group">
+                    <label for="instruccion_diseno">Instrucción de diseño:</label>
+                    <textarea id="instruccion_diseno" name="instruccion_diseno" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="instruccion_contexto">Instrucción de contexto:</label>
+                    <textarea id="instruccion_contexto" name="instruccion_contexto" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="instruccion_programacion">Instrucción de programación:</label>
+                    <textarea id="instruccion_programacion" name="instruccion_programacion"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="instruccion_configuracion">Instrucción de configuración:</label>
+                    <textarea id="instruccion_configuracion" name="instruccion_configuracion"></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>🐫 Otros Servicios</h2>
+                <div class="form-group">
+                    <label for="otros_servicios">Otros servicios contratados: 🐪</label>
+                    <textarea id="otros_servicios" name="otros_servicios"></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>🔗 Enlaces del Negocio</h2>
+                <div class="form-group">
+                    <label for="google_reviews">LINK GOOGLE CALIFICACIONES:</label>
+                    <input type="url" id="google_reviews" name="google_reviews">
+                </div>
+
+                <div class="form-group">
+                    <label for="facebook">LINK FACEBOOK FAN PAGE:</label>
+                    <input type="url" id="facebook" name="facebook">
+                </div>
+
+                <div class="form-group">
+                    <label for="instagram">LINK INSTAGRAM EMPRESA:</label>
+                    <input type="url" id="instagram" name="instagram">
+                </div>
+
+                <div class="form-group">
+                    <label for="tiktok">TIK TOK:</label>
+                    <input type="url" id="tiktok" name="tiktok">
+                </div>
+
+                <div class="form-group">
+                    <label for="youtube">CANAL DE YOUTUBE:</label>
+                    <input type="url" id="youtube" name="youtube">
+                </div>
+
+                <div class="form-group">
+                    <label for="archivo_pdf">ARCHIVO PDF:</label>
+                    <input type="url" id="archivo_pdf" name="archivo_pdf">
+                </div>
+
+                <div class="form-group">
+                    <label for="sitio_web">LINK SITIO WEB:</label>
+                    <input type="url" id="sitio_web" name="sitio_web">
+                </div>
+
+                <div class="form-group">
+                    <label for="canal_whatsapp">CANAL DE NOVEDADES DE WHATSAPP:</label>
+                    <input type="url" id="canal_whatsapp" name="canal_whatsapp">
+                </div>
+
+                <div class="form-group">
+                    <label for="catalogo_whatsapp">CATALOGO DE WHATSAPP:</label>
+                    <input type="url" id="catalogo_whatsapp" name="catalogo_whatsapp">
+                </div>
+
+                <div class="form-group">
+                    <label for="enlace_whatsapp">ENLACE WHATSAPP:</label>
+                    <input type="url" id="enlace_whatsapp" name="enlace_whatsapp">
+                </div>
+
+                <div class="form-group">
+                    <label for="coordenadas">CORDENADAS:</label>
+                    <input type="text" id="coordenadas" name="coordenadas" placeholder="Ej: 4.802302, -75.70725">
+                </div>
+
+                <div class="form-group">
+                    <label for="carpeta_drive">CARPETA DE DRIVE:</label>
+                    <input type="url" id="carpeta_drive" name="carpeta_drive">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>📦 Materiales y Recursos</h2>
+                <div class="form-group">
+                    <label for="productos">Productos:</label>
+                    <textarea id="productos" name="productos"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="servicios">Servicios:</label>
+                    <textarea id="servicios" name="servicios"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="imagen_corporativa">Imagen corporativa:</label>
+                    <textarea id="imagen_corporativa" name="imagen_corporativa"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="contenido_apoyo">Contenido de apoyo:</label>
+                    <textarea id="contenido_apoyo" name="contenido_apoyo"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="entregables">Entregables:</label>
+                    <textarea id="entregables" name="entregables"></textarea>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">Enviar Información</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
