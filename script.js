@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Format message for WhatsApp
             const whatsappMessage = formatWhatsAppMessage(formDataObject);
-            const whatsappUrl = `https://wa.me/YOUR_PHONE_NUMBER?text=${encodeURIComponent(whatsappMessage)}`;
+            const whatsappUrl = `https://wa.me/573226060533?text=${encodeURIComponent(whatsappMessage)}`;
 
             // Show success message
             successMessage.style.display = 'block';
@@ -223,4 +223,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize
     initTheme();
     loadFormData();
-}); 
+});
